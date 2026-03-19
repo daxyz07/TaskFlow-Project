@@ -1,0 +1,181 @@
+{
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "black": 800
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-3xl md:text-4xl tracking-tight font-semibold",
+      "h3": "text-2xl md:text-3xl tracking-tight font-semibold",
+      "h4": "text-xl md:text-2xl font-medium",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed",
+      "body_sm": "text-sm leading-relaxed",
+      "caption": "text-xs tracking-wide uppercase text-muted-foreground"
+    },
+    "import_url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "card": "#18181b",
+      "card_foreground": "#fafafa",
+      "popover": "#09090b",
+      "popover_foreground": "#fafafa",
+      "primary": "#6366f1",
+      "primary_foreground": "#ffffff",
+      "secondary": "#27272a",
+      "secondary_foreground": "#fafafa",
+      "muted": "#27272a",
+      "muted_foreground": "#a1a1aa",
+      "accent": "#27272a",
+      "accent_foreground": "#fafafa",
+      "destructive": "#f43f5e",
+      "destructive_foreground": "#ffffff",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#6366f1"
+    },
+    "chart_colors": {
+      "chart_1": "#6366f1",
+      "chart_2": "#22d3ee",
+      "chart_3": "#818cf8",
+      "chart_4": "#34d399",
+      "chart_5": "#f472b6"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, rgba(9, 9, 11, 0) 70%)",
+      "card_hover": "linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%)",
+      "active_border": "linear-gradient(90deg, #6366f1 0%, #22d3ee 100%)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "default": "bg-zinc-950/70 backdrop-blur-xl border border-white/10",
+      "heavy": "bg-zinc-950/90 backdrop-blur-2xl border-b border-white/5",
+      "card": "bg-zinc-900/50 backdrop-blur-md border border-white/5 hover:border-white/10 transition-colors duration-300"
+    },
+    "borders": {
+      "subtle": "border border-white/5",
+      "highlight": "border border-indigo-500/30",
+      "tracing_beam": "relative after:absolute after:inset-0 after:rounded-lg after:p-[1px] after:bg-gradient-to-r after:from-transparent after:via-indigo-500 after:to-transparent after:opacity-0 hover:after:opacity-100 after:transition-opacity"
+    },
+    "shadows": {
+      "glow": "0 0 20px -5px rgba(99, 102, 241, 0.3)",
+      "float": "0 10px 30px -10px rgba(0, 0, 0, 0.5)"
+    },
+    "radius": {
+      "default": "rounded-lg",
+      "button": "rounded-md",
+      "card": "rounded-xl"
+    }
+  },
+  "layout": {
+    "container": {
+      "max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "dashboard_grid": "grid grid-cols-1 md:grid-cols-[240px_1fr] min-h-screen"
+    },
+    "spacing": {
+      "section_gap": "py-24 md:py-32",
+      "component_gap": "gap-6 md:gap-8",
+      "internal_padding": "p-6 md:p-8"
+    },
+    "grids": {
+      "bento_marketing": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6",
+      "dashboard_widgets": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_-3px_rgba(99,102,241,0.4)] transition-all duration-300",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+      "ghost": "hover:bg-accent hover:text-accent-foreground",
+      "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+    },
+    "cards": {
+      "base": "bg-card text-card-foreground rounded-xl border border-border/50 shadow-sm hover:shadow-md transition-all duration-300",
+      "glass": "bg-zinc-900/40 backdrop-blur-md border border-white/5"
+    },
+    "inputs": {
+      "base": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "kanban": {
+      "column": "bg-zinc-900/30 backdrop-blur-sm rounded-xl border border-white/5 p-4 min-w-[300px]",
+      "card": "bg-zinc-800/50 hover:bg-zinc-800/80 border border-white/5 rounded-lg p-4 cursor-grab active:cursor-grabbing transition-all shadow-sm hover:shadow-md hover:border-indigo-500/30 group relative overflow-hidden"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "transition-all duration-300 ease-out",
+      "slow": "transition-all duration-500 ease-in-out",
+      "fast": "transition-all duration-150 ease-out"
+    },
+    "animations": {
+      "fade_in": "animate-in fade-in duration-500",
+      "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+      "pulse_slow": "animate-pulse duration-[3000ms]"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1761319659795-543075eaeaad?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Abstract streaks of light on a dark background, perfect for hero section overlay",
+      "category": "background"
+    },
+    "login_background": {
+      "url": "https://images.unsplash.com/photo-1764258559523-f109e3f54b1f?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Abstract movement streaks, dynamic and modern for auth pages",
+      "category": "background"
+    },
+    "team_collaboration": {
+      "url": "https://images.pexels.com/photos/6774180/pexels-photo-6774180.jpeg",
+      "description": "Diverse professional team working in modern office, for About/Team page",
+      "category": "content"
+    },
+    "feature_abstract": {
+      "url": "https://images.unsplash.com/photo-1762278804771-65c446b6acdb?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Abstract yellow lines, good for 'Performance' or 'Analytics' feature section",
+      "category": "content"
+    }
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install framer-motion: `yarn add framer-motion`",
+      "Install date-fns: `yarn add date-fns` (if not present)",
+      "Ensure tailwind.config.js has the custom colors and animations defined in this file."
+    ],
+    "implementation_rules": [
+      "Use the 'Manrope' font for all headings (h1-h4).",
+      "Use 'Inter' for body text.",
+      "Use 'JetBrains Mono' for task IDs, code snippets, and tabular data.",
+      "Implement the 'Cyber-Executive' theme: Dark Zinc backgrounds with Indigo/Violet accents.",
+      "For the Kanban board, ensure columns have a glassmorphism effect (bg-zinc-900/30 backdrop-blur-sm).",
+      "Use 'sonner' for all toast notifications.",
+      "Ensure all interactive elements have `data-testid` attributes.",
+      "Do NOT use pure black (#000000). Use Zinc-950 (#09090b) as the darkest shade.",
+      "Add 'tracing beam' or subtle glow effects to active cards or selected items."
+    ]
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid generic 'AI slop' designs. Push for asymmetry and unique layouts.",
+    "Dark colors must be rich (tinted with blue/violet), not muddy gray.",
+    "Use 2-3x more spacing than typical. 'p-8' is the new 'p-4'.",
+    "Never use 'transition: all'. Animate specific properties (transform, opacity, colors).",
+    "Do not center-align the entire app. Use left alignment for readability.",
+    "Use glassmorphism with `backdrop-blur-xl` for overlays and sticky headers.",
+    "Every interaction needs a micro-animation (hover, click, focus).",
+    "Use the provided image URLs. Do not use placeholders."
+  ]
+}

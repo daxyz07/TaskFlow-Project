@@ -1,0 +1,47 @@
+.gradient-hero {
+  background: radial-gradient(circle at center top, rgba(99, 102, 241, 0.15) 0%, rgba(9, 9, 11, 0) 70%);
+}
+
+.kanban-column {
+  min-width: 320px;
+  max-width: 320px;
+}
+
+.task-card-hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  padding: 1px;
+  background: linear-gradient(90deg, #6366f1 0%, #22d3ee 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.task-card-hover:hover::before {
+  opacity: 1;
+}
+
+.stat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1 0%, #22d3ee 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stat-card:hover::after {
+  opacity: 1;
+}
